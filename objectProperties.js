@@ -16,3 +16,22 @@ const person = {
 
 console.log(person);
 person.greet();
+
+//Array
+const hobbies = ['Sports','Cooking'];
+for(let hobby of hobbies){
+    console.log(hobby);
+}
+
+/* console.log(hobbies.map(hobby => {
+    return 'Hobby : ' + hobby;
+    //transform new array
+})); */
+
+console.log(hobbies.map(hobby => 'Hobby2 : '+ hobby));
+console.log(hobbies);//original array not converted
+
+//Object, Array : reference type
+hobbies.push('Programming');
+console.log(hobbies);
+    
